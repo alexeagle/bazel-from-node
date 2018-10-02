@@ -96,7 +96,7 @@ our sources. In this case, we need to add this to `BUILD.bazel`:
 
 ```python
 load("@build_bazel_rules_typescript//:defs.bzl", "ts_library", "ts_devserver")
-ts_library(name = "app", srcs = [":app.ts"], tsconfig = ":tsconfig.json")
+ts_library(name = "app", srcs = [":app.ts"])
 ```
 
 > The load statement is just like an `import` or `require` statement to get the
